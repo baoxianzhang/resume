@@ -1,0 +1,106 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{张宝先}
+
+\basicInfo{
+  \email{baoxianzhit@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 158-1553-5057} % \textperiodcentered\ 
+  %\birthday{1988年9月10日}
+  \github[baoxianzhang]{https://github.com/baoxianzhang}
+  % \linkedin[baoxian zhang]{https://www.linkedin.com/in/baoxianz-zhang}
+  }
+
+% \section{\faGraduationCap\ 个人信息}
+% \datedsubsection{\textbf{籍贯}}{福建龙岩}
+% \datedsubsection{\textbf{出生年月}}{1988年9月10日}
+
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{哈尔滨工业大学}}{2011年9月 -- 2014年1月}
+\textit{硕士}\ 控制科学与工程
+\datedsubsection{\textbf{合肥工业大学}}{2007年9月 -- 2011年7月}
+\textit{学士}\ 车辆工程
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{深圳市摩仑科技有限公司}} {2015年7月 -- 2016年12月}
+\role{算法兼嵌入式软件工程师}{}
+\begin{onehalfspacing}
+从事光定位算法兼嵌入式软件开发
+\begin{itemize}
+  \item 实现光定位数据采集并使用Kalman实现定位算法。
+  \item 主要开发四种产品的固件(Atom, Neutron, Nut, Fig), 实现联网，配置，连平台功能。
+  \item 使用PyQt完成产品测试软件。
+  \item 完成在线编程架构,并用makefile实现其逻辑。
+  % \item 后台资源占用率减少8\%
+  % \item xxx
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{广东省自动化研究所}}{2014年3月 -- 2015年7月}
+\role{助理研究员}{}
+\begin{onehalfspacing}
+从事无人机姿态算法，传感器校准方面工作
+\begin{itemize}
+  \item 搭建传感器校准平台。
+  \item 实现加速度计,陀螺仪,磁力计等传感器校准算法,使得传感器精度提高。
+  \item 使用Kalman算法实现无人机姿态求解,实现多传感器融合。
+  % \item 开发电调
+\end{itemize}
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{哈尔滨工业大学}}{2011年9月 -- 2014年1月}
+\role{硕士}{}
+\begin{onehalfspacing}
+    基于多传感器融合的机器人同步定位与制图(SLAM)项目
+\begin{itemize}
+  \item 提取Kinect的彩色图像信息和深度信息，使用OpenCV提取环境特征,实现机器人的定位。
+  \item 基于ROS上解决二维网格地图和三维点云地图融合问题，使用AMCL定位方法来融合两幅占有网格地图。
+  \item 发表论文: AMCL based Map Alignment of Multi-robot SLAM with Heterogenous Sensors。
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: C， C++， Python
+  \item 平台: Linux, Windows
+  \item 工具: Emacs， Vim
+  % \item 全国计算机考试二级C语言
+\end{itemize}
+
+% \section{\faHeartO\ 获奖情况}
+% \datedline{\textit{哈工大深圳研究生院}, 特等奖和一等奖各一次}{2011 年 -- 2014年}
+% \datedline{\textit{合肥工业大学}, 国家奖学金一次，一等奖三次}{2007 年 -- 2011年}
+
+\section{\faInfo\ 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  % \item 技术博客: http://blog.yours.me
+  % \item GitHub: https://github.com/baoxianzhang
+  \item 语言: 英语 - 熟练(CET-6)
+  \item 驾照(C1)
+  \item 羽毛球,乒乓球，篮球。
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

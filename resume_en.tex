@@ -1,0 +1,85 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Baoxian Zhang}
+
+\basicInfo{
+  \email{baoxianzhit@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 158-1553-5057} % \textperiodcentered\ 
+  \github[baoxianzhang]{https://github.com/baoxianzhang}
+  % \linkedin[baoxian zhang]{https://www.linkedin.com/in/baoxianz-zhang}
+  }
+ \section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Harbin Institute of Technology}}{Sep. 2011 -- Jan. 2014}
+\textit{Master student} in Control Science and Engineering
+\datedsubsection{\textbf{HeFei University of Technology}}{Sep. 2007 -- Jul. 2011}
+\textit{B.S.} in Vehicle Engineering
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{MOLMC Inc.}}{Jul. 2015 -- Dec. 2016}
+\role{Algorithm Engineer \& Embedded Software Engineer}{}
+Engaged in optical localization algorithm, embedded software development.
+\begin{itemize}
+  \item Implemented optical localization data acquistion and the localization algorithm.
+  \item Implemented four kinds of products development and testing.
+  \item Familiar with STM32, ESP8266, ESP32 and OpenWRT.
+\end{itemize}
+
+\datedsubsection{\textbf{Guangdong Institute of Automation}}{Mar. 2014 -- Jul. 2015}
+\role{Research Assistant}{}
+Engaged in attitude algorithm and sensor calibration Of UAV.
+\begin{itemize}
+  \item Calibrated accelerometer, gyroscope and magnetometer, the sensor
+    precision was improved.
+  \item Calculated UAV attitude by multi-sensor fusion using Kalman algorithm.  
+\end{itemize}
+
+\datedsubsection{\textbf{Harbin Institute of Technology}}{Sep. 2011 -- Jan. 2014}
+\role{Master Student}{}
+The simultaneous localization and mapping based on multi-sensor fusion.
+\begin{itemize}
+  \item Extracted color and depth information of Kinect and Extracted features
+    of the color image using OpenCV to loacalize the robot.
+  \item Solved the map fusion of 2D grid map and 3D point cloud map. Used the
+    AMCL localization method to align Map of Multi-robot SLAM with Heterogenous Sensors.
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C, C++, Python
+  \item Platform: Linux, Windows
+  \item Tools: Emacs, Vim
+\end{itemize}
+
+\section{\faHeartO\ Honors and Awards}
+\datedline{\textit{Harbin Institute of Technology}, The special awawd and the first prize}{2011 -- 2014}
+\datedline{\textit{HeFei University of Technology}, National scholarship and the
+  first prize} {2007 -- 2011}
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  % \item Blog: http://your.blog.me
+  % \item GitHub: https://github.com/username
+  \item Languages: English (CET-6) 
+  \item The deriver's license (C1)
+  \item Badminton, Table Tennis, Basketball
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
